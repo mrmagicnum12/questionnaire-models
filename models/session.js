@@ -6,7 +6,7 @@ const Schema = mongoose.Schema;
 let Session = new Schema({
   id : String,
   questionnaire : [{type : Schema.Types.ObjectId, ref : 'Questionnaire'}],
-  questions : [{questionId : String, question : String, answer : String}],
+  questions : [{questionId : String, answerId : String}],
 	created : {type : Date, default : Date.now}
 });
 
