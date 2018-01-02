@@ -3,7 +3,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const Question = new Schema({
+let Question = new Schema({
   question : String,
   answers : [{answer : String, selected : Boolean}],
 	created : {type : Date, default : Date.now}
